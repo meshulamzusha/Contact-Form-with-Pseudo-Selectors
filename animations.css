@@ -1,0 +1,121 @@
+* {
+    /* outline: solid 1px red; */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+html {
+    background-color: #f4f4f4;
+    margin: 20px 5% 20px 5%;
+}
+
+body {
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header header {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 668px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.nav-item {
+    color: #95a5a6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    color: #3498db;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    gap: 40px;
+}
+
+.animation-area {
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.pulse-animation {
+    color: #ffffff;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #642e88, #2c53d3);
+}
+
+.bounce-animation {
+    color: #ffffff;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #e9864d, #d32ca9);
+}
+
+
+
+.rotate-animation {
+    color: #ffffff;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #70ecf0 50%, #e4e6f7);
+}
+
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+}

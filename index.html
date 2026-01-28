@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -14,6 +14,8 @@
         <nav>
             <a href="./index.html" class="nav-item">Home</a>
             <a href="./gallery.html" class="nav-item">Gallery</a>
+            <a href="./animations.html" class="nav-item">Animations</a>
+            <a href="" class="nav-item">Challenge</a>
         </nav>
     </div>
     <main>
@@ -40,7 +42,7 @@
             </div>
             <div class="input-group"> 
                 <label for="message">Message:</label>
-                <input type="text" name="message" placeholder="Type your message here...">
+                <textarea name="message" rows="5" placeholder="Type your message here..."></textarea>
             </div>
             <div class="input-group">
                 <label for="priority">Priority Level:</label>
@@ -51,18 +53,18 @@
                     <option value="urgent">Urgent</option>
                 </select>
             </div>
-            <div>
+            <div class="input-group checkboxes" >
                 <input type="checkbox" name="subscribe">
-                <label for="subscribe">Subscribe to newsletter</label>
+                <label for="subscribe" class="checkbox-label">Subscribe to newsletter</label>
                 <input type="checkbox" name="agree">
-                <label for="afree">I agree to terms and conditions</label>
+                <label for="afree" class="checkbox-label">I agree to terms and conditions</label>
             </div>
             <div>
-                <input type="submit" value="Submit Form">
-                <input type="reset" value="Reset Form">
+                <input type="submit" value="Submit Form" class="submit-btn" disabled>
+                <input type="reset" value="Reset Form" class="reset-btn">
             </div>
         </form>
-        <div>
+        <div class="pseudo-selectors">
             <h5>Pseudo Selectors Used:</h5>
             <ul>
                 <li><b>:hover</b> - Applied to buttons and inputs when you mouse over them</li>
